@@ -345,6 +345,7 @@ describe("Restangular", function() {
       expect(collection.getRestangularUrl()).toBe('/accounts');
       expect(collection[0].getRestangularUrl()).toBe('/accounts/0');
 
+      expect(collection[0].getParentList()).toBe(collection);
     });
   });
 
